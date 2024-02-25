@@ -1,0 +1,902 @@
+:root {
+  /* color */
+  /* red */
+  --color-primary-red: #e50914;
+  --color-btn-hover: #e50914;
+  --color-btn-active: #bb0a12;
+  --color-btn-rest: #e50914;
+
+  --color-primary-black: #000000;
+  --color-header-bg: hsla(0, 0%, 0%, 0.7);
+
+  --color-gray: #8c8c8c;
+  --color-seperator: #222222;
+  --color-footer-p: #757575;
+  --color-sign-in-help: #b3b3b3;
+
+  --color-primary-white: #ffffff;
+
+  --color-main-blue: #0071eb;
+  --color-main-orange: #ffa00a;
+  --color-main-green: #5fa53f;
+
+  --color-facebook: #4267b2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: var(--color-primary-black) !important;
+  font-family: "Netflix sans", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto !important;
+}
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+.seperator {
+  height: 6px !important;
+  background: var(--color-seperator);
+  border: none;
+  margin: 0;
+  opacity: 1;
+}
+
+/* .........................header styling.................... */
+
+.header {
+  background: url(images/netflix-landingpage-img.png) no-repeat center center /
+    cover;
+  position: relative;
+}
+.header:after {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+}
+.header > .container {
+  max-width: 1600px;
+}
+
+/* .........................navbar styling..................... */
+
+.navbar-contents {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 56px;
+  z-index: 9999999;
+}
+.navbar-links {
+  display: flex;
+  text-align: center;
+  gap: 32px;
+  align-items: center;
+}
+.navbar-logo {
+  z-index: 2;
+}
+.navbar-links > .language-selector {
+  font-family: "Netflix Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--color-primary-white);
+  border: 2px solid var(--color-primary-white);
+  padding: 10px 18px;
+  border-radius: 2px;
+  text-decoration: none;
+  z-index: 999;
+}
+.sign-in {
+  font-family: "Netflix Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  background: #e50914;
+  color: var(--color-primary-white);
+  padding: 10px 20px;
+  border-radius: 3px;
+  text-decoration: none;
+  z-index: 99;
+}
+.sign-in:hover {
+  color: white;
+}
+
+/* .......................hero-section styling........................... */
+.hero {
+  display: flex;
+  justify-content: center;
+  padding-block: 140px;
+}
+.hero-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 99999;
+  text-align: center;
+}
+.title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 70px;
+  color: var(--color-primary-white);
+  max-width: 20ch;
+  margin-bottom: 16px;
+}
+.feature-discription {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  color: var(--color-primary-white);
+}
+.sub-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--color-primary-white);
+  margin-bottom: 20px;
+}
+.input-btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.input {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--color-gray);
+  padding: 26px 360px 26px 8px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 2px 0 0 2px;
+}
+.btnn {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  color: var(--color-primary-white);
+  text-decoration: none;
+  background: var(--color-primary-red);
+  padding: 19px 20px;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 0 2px 2px 0;
+}
+.btnn:hover {
+  color: var(--color-primary-white);
+}
+.btnn > i {
+  font-size: 26px;
+  color: var(--color-primary-white);
+  margin-left: 14px;
+}
+
+/* ......................... section-1 feature styling.................... */
+
+.features {
+  display: flex;
+  margin-block: 50px;
+  align-items: center;
+  gap: 60px;
+}
+.feature-info {
+  width: 50%;
+}
+.feature-title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 55px;
+  color: var(--color-primary-white);
+  margin-block: 20px;
+}
+.feature-img {
+  width: 50%;
+  position: relative;
+  z-index: 99999;
+}
+.feature-img > .feature-img-main {
+  z-index: 2222222;
+  position: relative;
+}
+.feature-img-vid {
+  position: absolute;
+  height: 217;
+  width: 62%;
+  top: 82px;
+  right: 162px;
+  z-index: 0;
+}
+main .container > .features-seperator {
+  max-width: none;
+}
+
+/* ....................section-2 features styling........................... */
+.reverse {
+  flex-direction: row-reverse;
+}
+.card-items {
+  position: absolute !important;
+  top: 248px !important;
+  left: 92px !important;
+  padding: 8px 10px !important;
+  border-radius: 10px !important;
+  display: flex !important;
+  background: var(--color-primary-black) !important;
+  align-items: center !important;
+  border: 3px solid rgba(255, 255, 255, 0.25) !important;
+  width: 324px !important;
+}
+.card-block {
+  background: var(--color-primary-black);
+  margin-left: 14px;
+}
+.card-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-primary-white);
+  margin-bottom: 2px;
+}
+.card-download {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-main-blue);
+}
+.download-icon {
+  margin-left: auto;
+}
+
+/* ..........................section-3  styling.......................... */
+
+.feature-img-mac-pic {
+  width: 56%;
+  top: 29px;
+  position: absolute;
+  right: 166px;
+  z-index: 2222;
+}
+
+/* ....................frequently asked questions styling...................... */
+
+.faq-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-block: 80px;
+}
+.faq-contents > .feature-title {
+  margin-bottom: 50px;
+}
+.faq-contents-bars {
+  margin-bottom: 60px;
+}
+.faq-contents-bar > .feature-discription {
+  margin-bottom: 0;
+}
+.faq-contents-bar {
+  width: 100%;
+  background: #303030;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 22px 20px;
+  gap: 480px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+.faq-contents-bar > a > i {
+  color: var(--color-primary-white);
+  font-size: 20px;
+  text-decoration: none;
+}
+.faq-input {
+  margin-top: 66px;
+  text-align: center;
+}
+
+/* ...................footer styling.............................. */
+
+.sign-in_page-header > .container {
+  max-width: 1600px;
+}
+.footer-contents {
+  padding: 60px 160px;
+}
+.footer-contents > .footer-contents-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-footer-p);
+  text-decoration: none;
+}
+
+.footer-contents-title > p {
+  margin-bottom: 30px;
+  transition: all 0.5s ease;
+}
+.footer-contents > .footer-contents-title > p::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: var(--color-footer-p);
+  display: block;
+}
+.footer-contents > .footer-contents-title > p:hover::after {
+  width: 23.5%;
+}
+.footer-info {
+  display: flex;
+  gap: 120px;
+  margin-bottom: 30px;
+}
+.footer-info-items > a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--color-footer-p);
+  cursor: pointer;
+  text-decoration: none;
+}
+.footer-info-items a > p {
+  margin-bottom: 18px;
+}
+.footer-info-items > a:hover {
+  text-decoration: underline;
+}
+
+/* .......................Sign-in page Styling .........................*/
+
+.sign-up_page_body {
+  background: url(images/netflix-signup-landingpageimg.png) no-repeat center
+    center / cover !important;
+}
+.sign-in_page_navbar-contents {
+  margin-bottom: 0;
+}
+.sign-in_page-header:after {
+  background: rgba(0, 0, 0, 0.2);
+}
+.sign-in_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.sign-in_page_contents {
+  position: relative;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 60px 70px 140px 70px;
+  border-radius: 4px;
+  margin-bottom: 90px;
+}
+.sign-in-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 30px;
+  color: var(--color-primary-white);
+}
+.sign-in_inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 50px;
+}
+.sign-in_input {
+  background: #333333;
+  border-radius: 4px;
+  border: none;
+  padding: 16px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  outline: none;
+  color: var(--color-primary-white);
+}
+.sign-in_btn-container {
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.sign-in_btn {
+  display: inline-block;
+  background: var(--color-btn-hover);
+  text-decoration: none;
+  padding: 16px 130px;
+  text-align: center;
+  color: var(--color-primary-white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  width: 100%;
+  border-radius: 4px;
+}
+.sign-in_help {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  border-radius: 4px;
+  margin-bottom: 56px;
+}
+.sign-in_help > a {
+  text-decoration: none;
+  color: var(--color-sign-in-help);
+}
+.sign-in_contact_facebook {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.sign-in_contact_facebook > i {
+  font-size: 20px;
+  color: var(--color-facebook);
+}
+.sign-in_contact_facebook > a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--color-sign-in-help);
+}
+.sign-in_contact_signup {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-sign-in-help);
+  margin-bottom: 14px;
+}
+.sign-in_contact_signup > p > a {
+  text-decoration: none;
+  color: var(--color-primary-white);
+}
+.sign-in_contact_signup > p > a:hover {
+  text-decoration: underline;
+}
+.sign-in_about {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  max-width: 40ch;
+  color: var(--color-sign-in-help);
+}
+.sign-in_about > a {
+  color: var(--color-main-blue);
+  text-decoration: none;
+}
+.sign-in_about > a:hover {
+  text-decoration: underline;
+}
+.sign-up_page-footer {
+  background: rgba(0, 0, 0, 0.7);
+}
+.sign-up_page-footer > .container {
+  margin: 0 auto;
+}
+.sign-up_page-footer > .container > .footer-contents {
+  padding: 30px 100px;
+}
+.sign-up_page-footer .container .footer-contents > .footer-info {
+  gap: 150px;
+}
+
+/* .......................CSS STYLING ENDS...................... */
+
+/* nav-toggler_show-hide css start */
+
+.nav-toggler_show-hide {
+  border: none;
+  padding: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  height: 39px;
+  /* display: none; */
+}
+.nav-toggler_show-hide span {
+  border: 0;
+  outline: none;
+}
+.nav-toggler_show-hide span:before,
+.nav-toggler_show-hide span:after {
+  width: 28px;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+.nav-toggler_show-hide span:before {
+  content: "";
+  transform: translateY(0px) rotate(90deg);
+}
+.nav-toggler_show-hide span:after {
+  content: "";
+  transform: translateY(-2px);
+}
+.nav-toggler_show-hide.toggler-open span:before {
+  transform: translateY(0px) rotate(45deg);
+}
+.nav-toggler_show-hide.toggler-open span:after {
+  transform: translateY(-3px) rotate(-45deg);
+}
+/* nav-toggler_show-hide css ends */
+
+/* bootstrap override codes........................ */
+
+h2 {
+  border-bottom: 4px solid #000000 !important;
+}
+#headingOne > button {
+  margin-left: 0;
+  background: #303030;
+}
+#headingTwo > button {
+  margin-left: 0;
+  background: #303030;
+}
+#headingThree > button {
+  margin-left: 0;
+  background: #303030;
+}
+#headingFour > button {
+  margin-left: 0;
+  background: #303030;
+}
+#headingFive > button {
+  margin-left: 0;
+  background: #303030;
+}
+#headingSix > button {
+  margin-left: 0;
+  background: #303030;
+}
+.accordion-item {
+  margin-bottom: 10px;
+  width: 60%;
+}
+.accordion-body {
+  background: #303030;
+  padding: 30px 32px;
+}
+.accordion-body-content {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  color: #ffffff;
+  text-align: start;
+}
+.accordion-item {
+  border: none !important;
+  background-color: none;
+}
+.accordion-item > h2 > button > p {
+  margin-bottom: 0;
+}
+.accordion-collapse {
+  background: #303030;
+}
+.accordion-button::after {
+  margin-left: 0;
+}
+
+.accordion-button::after {
+  background-image: url(images/plus.svg) !important;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url(images/cross.svg) !important ;
+}
+.accordion-button:focus {
+  box-shadow: unset !important;
+  border-color: unset !important;
+}
+
+/* ......................Media Queries Starts..........................  */
+
+/* media queries for Ipad & Tablet  */
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .navbar-contents {
+    padding: 28px 40px;
+  }
+  .title {
+    font-size: 56px;
+    line-height: 60px;
+  }
+  .feature-discription {
+    margin-bottom: 15px;
+  }
+  .sub-title {
+    border-radius: 4px;
+    max-width: 36ch;
+    margin-bottom: 20px !important;
+    margin: auto;
+  }
+  .input-btn {
+    flex-direction: column;
+    border-radius: 4px;
+  }
+  .input {
+    margin-bottom: 30px;
+    padding: 20px 360px 20px 16px;
+  }
+  .btnn {
+    padding: 10px 18px;
+    font-size: 20px;
+  }
+  .features {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .feature-info {
+    width: 100%;
+    text-align: center;
+  }
+  .feature-title {
+    font-size: 42px;
+    margin-block: 10px;
+  }
+  .feature-discription {
+    font-size: 20px;
+    max-width: 63ch;
+  }
+  .feature-img {
+    width: 100%;
+  }
+  .feature-img-vid {
+    width: 55%;
+  }
+  .card-items {
+    width: 324px !important;
+    left: 180px !important;
+    top: 250px !important;
+  }
+  .footer-info {
+    gap: 46px;
+  }
+  .footer-info-items a > p {
+    margin-bottom: 24px;
+  }
+  .feature-img-mac-pic {
+    width: 50%;
+    right: 180px;
+  }
+  .faq-contents > .feature-title {
+    margin-bottom: 25px;
+  }
+  .faq-contents-bar {
+    padding: 10px 20px;
+    gap: 280px;
+  }
+  .footer-info {
+    margin-bottom: 15px;
+  }
+  .footer-contents {
+    padding: 40px 60px;
+  }
+  .sign-in_page_navbar-contents {
+    padding: 28px 20px 6px 20px;
+  }
+  .sign-up_page-footer > .container > .footer-contents {
+    padding: 30px 16px;
+  }
+  .sign-up_page-footer .container .footer-contents > .footer-info {
+    gap: 75px;
+  }
+  .sign-in_btn-container {
+    display: block;
+  }
+  .sign-in_btn {
+    display: block;
+    padding: 16px 0;
+  }
+  /* bootstrap */
+  .accordion-item {
+    width: 88%;
+  }
+  .accordion-body-content {
+    font-size: 20px;
+  }
+}
+
+/* media queries for Mobile  */
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 380px;
+  }
+  .seperator {
+    height: 12px;
+  }
+  .navbar-contents {
+    margin-bottom: 20px;
+  }
+  .navbar-logo > a > img {
+    width: 70%;
+  }
+  .navbar-contents {
+    padding: 14px 20px;
+  }
+  .navbar-links > .language-selector {
+    display: none;
+  }
+  .sign-in {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+  .title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .feature-discription {
+    font-size: 18px;
+    max-width: 50ch;
+  }
+  .sub-title {
+    font-size: 18px;
+    line-height: 20px;
+    max-width: 34ch;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  .input {
+    padding: 12px 170px 12px 10px;
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  .btnn {
+    padding: 2px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+  .btnn > i {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .feature-title {
+    font-size: 28px;
+    line-height: 40px;
+    margin-block: 5px;
+  }
+  .features {
+    gap: 8px;
+  }
+  .feature-img-vid {
+    width: 73%;
+    top: 55px;
+    right: 50px;
+  }
+  .card-items {
+    width: 256px !important;
+    left: 180px;
+    top: 190px !important;
+    left: 54px !important;
+  }
+  .card-block {
+    text-align: start;
+  }
+  .card-title {
+    margin-bottom: 0 !important;
+  }
+  .card-download {
+    margin-bottom: 0 !important;
+  }
+  body
+    > section:nth-child(5)
+    > div
+    > div
+    > div
+    > div.feature-img
+    > div
+    > img:nth-child(1) {
+    width: 14%;
+  }
+  .faq-contents {
+    margin-block: 50px;
+  }
+  .faq > .container {
+    max-width: 1600px;
+  }
+  .faq-contents-bars {
+    width: 100%;
+  }
+  .feature-img-mac-pic {
+    width: 60%;
+    right: 70px;
+  }
+  .footer-contents {
+    padding: 50px 20px;
+  }
+  .faq-contents-bar {
+    gap: 80px;
+    padding: 10px 20px;
+  }
+  .faq-contents-bars {
+    margin-bottom: 30px;
+  }
+  .footer-info {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .footer-info-items {
+    width: 50%;
+  }
+  .nav-toggler_show-hide span:before,
+  .nav-toggler_show-hide span:after {
+    width: 20px;
+  }
+  .sign-in_page_contents {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .sign-in_page {
+    border: 4px solid var(--color-seperator);
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+  }
+  .sign-up_page_body {
+    background: none !important;
+  }
+  .sign-in_page_contents {
+    margin-bottom: 120px;
+  }
+  .sign-in_page_navbar-contents > .navbar-logo > a > img {
+    width: 50%;
+  }
+  .sign-in_page_navbar-contents {
+    padding: 18px 0 0 18px;
+  }
+  .sign-in_help {
+    margin-bottom: 30px;
+  }
+  .sign-in_contact_facebook {
+    margin-bottom: 30px;
+  }
+  .sign-in_about {
+    font-size: 13px;
+    max-width: 52ch;
+  }
+  .sign-up_page-footer > .container > .footer-contents {
+    padding: 30px 0px;
+  }
+  .sign-up_page-footer .container .footer-contents > .footer-info {
+    gap: 0;
+  }
+
+  /* bootstrap */
+  .accordion-item {
+    width: 100%;
+  }
+  .accordion-body-content {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
