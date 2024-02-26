@@ -215,6 +215,19 @@ body {
   z-index: 2222222;
   position: relative;
 }
+
+.feature-img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  background-color: var(--color-primary-black);
+  height: 100%;
+  z-index: 10000000;
+}
+
 .feature-img-vid {
   position: absolute;
   height: 217;
